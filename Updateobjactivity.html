@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IP-Final-Activity</title>
+</head>
+<body>
+<script>
+   
+
+
+const person ={
+    firstN:'Angelo',
+   lastN:'Armero',
+    age: 21,
+    occupation: 'Student',
+    address: {
+    city:'Legazpi',
+       state:'Albay',
+       country:'Philippines',
+    },
+    CheckStudent:true,
+
+    document:function(){document.write(this.firstN + ' ' + this.lastN + ' ' + this.age + ' ' +this.occupation + ' ' + this.address.city + ' ' + this.address.state + ' ' + this.address.country + '' + this.CheckStudent)}
+
+if(person.CheckStudent == false){
+   person.CheckStudent='He is not  a student' 
+}else{
+   person.CheckStudent='He is  a student'
+}
+person.document()
+
+</script>
+</body>
+</html>
